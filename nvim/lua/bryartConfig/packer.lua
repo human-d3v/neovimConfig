@@ -1,4 +1,4 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+-- This file is the boilerplate code provided by Packer on github. 
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
