@@ -85,11 +85,11 @@ return require('packer').startup(function(use)
 	  after = {'nvim-cmp'} -- if a completion plugin is using tabs load it before
   }
 
-  -- --setting up my ide to learn to code in R
-  -- --Nvim-R
-  -- use('jalvesaq/Nvim-R')
-  -- --ncm-R
-  -- use('gaalcaras/ncm-R')
+  --setting up my ide to learn to code in R
+  --Nvim-R
+  use('jalvesaq/Nvim-R')
+  --ncm-R
+  use('gaalcaras/ncm-R')
 
 
 end)
