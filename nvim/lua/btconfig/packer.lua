@@ -94,9 +94,9 @@ use {
 
   --setting up my ide to learn to code in R
   --Nvim-R
-  use('jalvesaq/Nvim-R')
+  --use('jalvesaq/Nvim-R')
   --ncm-R
-  use('gaalcaras/ncm-R')
+  --use('gaalcaras/ncm-R')
 
 
 end)
