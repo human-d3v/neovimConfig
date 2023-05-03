@@ -5,7 +5,7 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = {"r", "rnoweb"},
     callback = funciton()
       vim.schedule(function()
-        vim.keymap.set("i", ">", "<Esc>:normal! a %>% <Enter>", {buffer = true})
+        vim.keymap.set("i", ">", " %>% ", {buffer = true})
         vim.keymap.set("i", ">>", ">", {buffer = true})
       end)
     end,
