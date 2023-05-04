@@ -3,7 +3,7 @@
 --{rhs) => " %>% "
 vim.api.nvim_create_autocmd("FileType", {
     pattern = {"r", "rnoweb"},
-    callback = funciton()
+    callback = function()
       vim.schedule(function()
         vim.keymap.set("i", ">", " %>% ", {buffer = true})
         vim.keymap.set("i", ">>", ">", {buffer = true})
