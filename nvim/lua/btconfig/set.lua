@@ -5,9 +5,9 @@ vim.opt.nu = true --give me line numbers
 vim.opt.relativenumber = true --give me relative line numbers
 
 --tab spaces
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.expandtab = true
 
 --hand off undoing to undotree and don't keep a swapfile
