@@ -48,3 +48,12 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 --replacing every instance (similar to <C-F2> in vscode)
 vim.keymap.set("n", "<leader>s", ":s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>")
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
+
+--for Terminal Navigation
+local t_opts = {silent = true}
+local wincmd = vim.cmd.wincmd
+vim.keymap.set("t", "<esc>", '<C-\\><C-n>', t_opts)
+vim.keymap.set("t", "<C-h>", wincmd("h"), t_opts)
+vim.keymap.set('t', '<C-j>', wincmd('j'), t_opts)
+vim.keymap.set('t', '<C-k>', wincmd('k'), t_opts)
+vim.keymap.set('t', '<C-l>', wincmd('l'), t_opts)
