@@ -92,11 +92,14 @@ use {
 	after = {'nvim-cmp'} -- if a completion plugin is using tabs load it before
 }
 
-  --setting up my ide to learn to code in R
+  --setting up my ide to code in R
   --Nvim-R
   --use('jalvesaq/Nvim-R')
   --ncm-R
   --use('gaalcaras/ncm-R')
+  
+  --setting up ide for web dev
+  --use('manzeloth/live-server') --npm package live-server must be installed globally
 
 
 end)
