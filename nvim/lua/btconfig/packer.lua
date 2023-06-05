@@ -92,6 +92,8 @@ use {
 	after = {'nvim-cmp'} -- if a completion plugin is using tabs load it before
 }
 
+  use('rstacruz/vim-closer')
+
   --setting up my ide to code in R
   --Nvim-R
   --use('jalvesaq/Nvim-R')
