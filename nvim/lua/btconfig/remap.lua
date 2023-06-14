@@ -28,6 +28,9 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
+--likewise, this pastes from the system register into the current file
+vim.keymap.set("n","<leader>p,"\"+p")
+
 vim.keymap.set("n", "<C-c>", "<Esc>")
 
 --don't ever press Q. It's the worst place in the universe. 
