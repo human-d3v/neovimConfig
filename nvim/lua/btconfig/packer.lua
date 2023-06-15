@@ -89,12 +89,8 @@ use {
 
   --setting up my ide to code in R
   --Nvim-R
-  --use('jalvesaq/Nvim-R')
+    --use('jalvesaq/Nvim-R')
   --ncm-R
-  --use('gaalcaras/ncm-R')
-  
-  --setting up ide for web dev
-  --use('manzeloth/live-server') --npm package live-server must be installed globally
-
+    --use('gaalcaras/ncm-R')
 
 end)
