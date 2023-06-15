@@ -14,14 +14,7 @@ return require('packer').startup(function(use)
   }
 
   --color scheme
-  --use {'nyoom-engineering/oxocarbon.nvim'}
-  --use {'ray-x/aurora'}
-  use {
-	  "justinsgithub/oh-my-monokai.nvim",
-	  config = function()
-		  require("oh-my-monokai").setup()
-	  end
-  }
+  use('NLKNguyen/papercolor-theme')
 
   --treesitter & treesitter playground
     --treesitter displays the Abstract Syntax Tree in a separate panel when walking through code. 
