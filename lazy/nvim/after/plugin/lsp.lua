@@ -1,12 +1,12 @@
 local lsp = require('lsp-zero').preset({})
 
-lsp.on_attach(function(client, bufnr)
-  lsp.default_keymaps({buffer = bufnr})
-end)
+lsp.preset("recommended")
 
 lsp.ensure_installed({
 	'rust_analyzer',
 })
+--fix undefined global vim
+lsp.nvim_workspace();
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -17,8 +17,21 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C Space>"] = cmp.mapping.complete(),
 })
 
+cmp_mappings['<Tab>'] = nil
+cmp_mappings['<S-Tab>'] = nil
+
+lsp.setup_nvim_cmp({
+	mapping = cmp_mappings
+})
+
 lsp.set_preferences({
-	sign_icons = { }
+	suggest_lsp_servers = false,
+	sign_icons = { 
+		error = "E",
+		warm = "W",
+		hint = "H",
+		info = "I",
+	}
 })
 
 --on attach is really cool functionality, each time I'm on a buffer, this snippet of code lives only for the live of the buffer session. 
@@ -41,3 +54,7 @@ lsp.on_attach(function(client,bufnr)
 end)
 
 lsp.setup()
+
+vim.diagnostic.config({
+	virtual_text=true
+})
