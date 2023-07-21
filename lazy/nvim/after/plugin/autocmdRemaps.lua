@@ -20,3 +20,11 @@ vim.api.nvim_create_autocmd("FileType", {
 		end)
 	end,
 })
+
+--for the rusty-boi
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = {"rust", "rs", "Rust"},
+	callback = function ()
+		vim.keymap.set("n","<leader>rr" ,":RustRun<CR>")
+	end
+})
