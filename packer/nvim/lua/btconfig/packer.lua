@@ -86,11 +86,15 @@ use {
 }
 
   use('rstacruz/vim-closer')
+	use("mfussenegger/nvim-dap")
+	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
   --setting up my ide to code in R
   --Nvim-R
     --use('jalvesaq/Nvim-R')
   --ncm-R
     --use('gaalcaras/ncm-R')
-
+	--for Rust
+	use('neovim/nvim-lspconfig')
+	use('simrat39/rust-tools.nvim')
 end)
