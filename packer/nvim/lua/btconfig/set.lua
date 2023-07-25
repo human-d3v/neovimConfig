@@ -13,7 +13,7 @@ vim.expandtab = true
 --hand off undoing to undotree and don't keep a swapfile
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.undodir = os.getenv("HOME") .. "/.vim.undodir"
+--vim.undodir = os.getenv("HOME") .. "/.vim.undodir"
 vim.opt.undofile = true
 
 --set incremental search. This helps immensely with tricky searches
