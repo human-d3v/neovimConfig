@@ -10,8 +10,8 @@ cmp.setup({
       ['<C-Tab>'] = cmp.mapping.complete(),
       ['<C-q>'] = cmp.mapping.abort(),
       ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-			['<C-n>'] = cmp.mapping.select_next_item(),
-			['<C-p>'] = cmp.mapping.select_prev_item(),
+	['<C-n>'] = cmp.mapping.select_next_item(),
+	['<C-p>'] = cmp.mapping.select_prev_item(),
     }),
   snippet = {
     expand = function(args)
