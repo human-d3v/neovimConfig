@@ -25,6 +25,10 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = {"rust", "rs", "Rust"},
 	callback = function ()
+		vim.schedule(function ()
 		vim.keymap.set("n","<leader>rr" ,":RustRun<CR>")
-	end
+		vim.keymap.set("i", ">", "=>", {buffer = true})
+		vim.keymap.set("i", ">>", ">", {buffer = true})
+		end)
+	end,
 })
