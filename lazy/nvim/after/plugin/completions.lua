@@ -5,11 +5,13 @@ require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
-      ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-      ['<C-f>'] = cmp.mapping.scroll_docs(4),
-      ['<C-n>'] = cmp.mapping.complete(),
-      ['<C-e>'] = cmp.mapping.abort(),
+      ['<C-[>'] = cmp.mapping.scroll_docs(-4),
+      ['<C-]>'] = cmp.mapping.scroll_docs(4),
+      ['<C-Tab>'] = cmp.mapping.complete(),
+      ['<C-q>'] = cmp.mapping.abort(),
       ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+			['<C-n>'] = cmp.mapping.select_next_item(),
+			['<C-p>'] = cmp.mapping.select_prev_item(),
     }),
   snippet = {
     expand = function(args)
