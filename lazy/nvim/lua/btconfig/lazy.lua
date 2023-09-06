@@ -88,7 +88,13 @@ local plugins = {
 			'simrat39/rust-tools.nvim',
 
 			--rust debugging
-				'mfussenegger/nvim-dap'
+				'mfussenegger/nvim-dap',
+		--for quick commenting
+		{
+			'numToStr/Comment.nvim',
+			opts = {},
+			lazy = false,
+		}
 }
 
 
