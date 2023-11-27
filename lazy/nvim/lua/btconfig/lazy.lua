@@ -16,7 +16,7 @@ local plugins = {
     {'nvim-telescope/telescope.nvim', tag = '0.1.2',--nvim telescope. works as a fuzzy finder 
       dependencies = { 'nvim-lua/plenary.nvim' }
     },
-		'NLKNguyen/papercolor-theme',
+		--'NLKNguyen/papercolor-theme',
 		{'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
 		('nvim-treesitter/playground'),
 		('nvim-lua/plenary.nvim'),
@@ -94,6 +94,10 @@ local plugins = {
 			'numToStr/Comment.nvim',
 			opts = {},
 			lazy = false,
+		},
+		--colorscheme
+		{
+		'GustavoPrietoP/doom-themes.nvim'
 		}
 }
 
