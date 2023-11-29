@@ -32,3 +32,11 @@ vim.api.nvim_create_autocmd("FileType", {
 		end)
 	end,
 })
+
+--spell checking on txt files
+vim.api.nvim_create_autocmd('FileType', {
+	pattern = {"txt","text"}, 
+	callback = function ()
+		vim.opt_local.spell = true
+	end
+})
