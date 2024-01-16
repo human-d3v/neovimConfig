@@ -98,6 +98,16 @@ local plugins = {
 		--colorscheme
 		{
 		'GustavoPrietoP/doom-themes.nvim'
+		},
+		--kitty conf files syntax highlighting
+		'fladson/vim-kitty',
+		--markdown preview
+
+		{
+			"iamcco/markdown-preview.nvim",
+			cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+			ft = { "markdown" },
+			build = function() vim.fn["mkdp#util#install"]() end,
 		}
 }
 
