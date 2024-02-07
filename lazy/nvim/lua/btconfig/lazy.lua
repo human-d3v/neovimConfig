@@ -107,6 +107,16 @@ local plugins = {
 			cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 			ft = { "markdown" },
 			build = function() vim.fn["mkdp#util#install"]() end,
+		},
+		'poliquin/stata-vim',
+		{
+			"jpalardy/vim-slime",
+			init = function()
+			  vim.g.slime_no_mappings = 1
+        vim.api.nvim_set_keymap('x', '<leader>s', '<Plug>SlimeRegionSend', { silent = true })
+        vim.api.nvim_set_keymap('n', '<leader>s', '<Plug>SlimeMotionSend', { silent = true })
+        vim.api.nvim_set_keymap('n', '<leader>ss', '<Plug>SlimeLineSend', { silent = true })
+			end
 		}
 }
 
