@@ -42,5 +42,4 @@ vim.cmd [[
 	autocmd BufRead,BufNewFile *.do set filetype=do
 	autocmd BufRead,BufNewFile *.ado set filetype=ado
 	autocmd BufRead,BufNewFile *.dct set filetype=dct
-
 ]]
